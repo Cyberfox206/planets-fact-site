@@ -1,0 +1,57 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+// Include any default variable overrides here (though functions won't be available)
+@import "./node_modules/bootstrap/scss/bootstrap.scss";
+
+// Then add additional custom code here
+@import url('https://fonts.googleapis.com/css2?family=Antonio&family=League+Spartan&display=swap');
+$antonio: 'Antonio', sans-serif;
+$partan: 'League Spartan', sans-serif;
+$color1: #FFFFFF;
+$color2: #070724;
+$color3: #38384F;
+$color4: #838391;
+$color5: #419EBB;
+$color6: #EDA249;
+$color7: #6D2ED5;
+$color8: #D14C32;
+$color9: #D83A34;
+$color10: #CD5120;
+$color11: #1EC1A2;
+$color12: #2D68F0;
+
+.planetsize {
+    width: 50%;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(assets/background-stars.svg);
+    background-color: $color2;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    header {
+        img {
+            width: 2em;
+        }
+    }
+
+    p {
+        font-family: $partan;
+    }
+
+    h1 {
+        font-family: $antonio;
+    }
+
+    h2 {
+        font-family: $antonio;
+    }
+
+    h3 {
+        font-family: $antonio;
+    }
+}
