@@ -25,6 +25,38 @@ $color12: #2D68F0;
     width: 50%;
 }
 
+.mercurycolor {
+    border-bottom-color: $color5 !important;
+}
+
+.venuscolor {
+    border-bottom-color: $color6 !important;
+}
+
+.earthcolor {
+    border-bottom-color: $color7 !important;
+}
+
+.marscolor {
+    border-bottom-color: $color8 !important;
+}
+
+.jupitercolor {
+    border-bottom-color: $color9 !important;
+}
+
+.saturncolor {
+    border-bottom-color: $color10 !important;
+}
+
+.uranuscolor {
+    border-bottom-color: $color11 !important;
+}
+
+.naptunecolor {
+    border-bottom-color: $color12 !important;
+}
+
 body {
     width: 100vw;
     height: 100vh;
