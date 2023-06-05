@@ -9,61 +9,81 @@
 $antonio: 'Antonio', sans-serif;
 $partan: 'League Spartan', sans-serif;
 $color1: #FFFFFF;
-$color2: #070724;
+$bgc_body: #070724;
 $color3: #38384F;
 $color4: #838391;
-$color5: #419EBB;
-$color6: #EDA249;
-$color7: #6D2ED5;
-$color8: #D14C32;
-$color9: #D83A34;
-$color10: #CD5120;
-$color11: #1EC1A2;
-$color12: #2D68F0;
+$mercurycolor: #419EBB;
+$venuscolor: #EDA249;
+$earthcolor: #6D2ED5;
+$marscolor: #D14C32;
+$jupitercolor: #D83A34;
+$saturncolor: #CD5120;
+$uranuscolor: #1EC1A2;
+$naptunecolo: #2D68F0;
 
 .planetsize {
-    width: 50%;
+    width: 240px;
+    height: 240px;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(assets/planet-mercury.svg);
+}
+
+.psedo::after {
+    left: 23%;
+    bottom: 0;
+    content: "";
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    background-size: contain;
+    transform: translateY(40%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(assets/geology-mercury.png);
 }
 
 .mercurycolor {
-    border-bottom-color: $color5 !important;
+    border-bottom-color: $mercurycolor !important;
 }
 
 .venuscolor {
-    border-bottom-color: $color6 !important;
+    border-bottom-color: $venuscolor !important;
 }
 
 .earthcolor {
-    border-bottom-color: $color7 !important;
+    border-bottom-color: $earthcolor !important;
 }
 
 .marscolor {
-    border-bottom-color: $color8 !important;
+    border-bottom-color: $marscolor !important;
 }
 
 .jupitercolor {
-    border-bottom-color: $color9 !important;
+    border-bottom-color: $jupitercolor !important;
 }
 
 .saturncolor {
-    border-bottom-color: $color10 !important;
+    border-bottom-color: $saturncolor !important;
 }
 
 .uranuscolor {
-    border-bottom-color: $color11 !important;
+    border-bottom-color: $uranuscolor !important;
 }
 
 .naptunecolor {
-    border-bottom-color: $color12 !important;
+    border-bottom-color: $naptunecolo !important;
 }
 
 body {
     width: 100vw;
     height: 100vh;
-    background-image: url(assets/background-stars.svg);
-    background-color: $color2;
+    background-color: $bgc_body;
     background-position: center;
     background-repeat: no-repeat;
+    background-image: url(assets/background-stars.svg);
 
     header {
         img {

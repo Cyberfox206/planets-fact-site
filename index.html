@@ -14,19 +14,19 @@
   <header
     class="container d-flex justify-content-between align-items-center border-bottom border-white border-opacity-25">
     <h1 class="fs-1 my-3 text-uppercase text-white">the planets</h1>
-    <img class="my-3" src="assets/icon-hamburger.svg" alt="/">
+    <a href="index.html"><img class="my-3" src="assets/icon-hamburger.svg" alt="/"></a>
   </header>
   <main class="d-flex justify-content-center align-items-center flex-column">
     <div
       class="container d-flex justify-content-around align-items-center border-bottom border-white border-opacity-25">
-      <button type="button"
-        class="border-0 border-bottom border-3 mercurycolor py-3 text-uppercase text-white text-opacity-50 bg-transparent">overview</button>
-      <button type="button"
-        class="border-0 py-3 border-3 text-uppercase text-white text-opacity-50 bg-transparent">structure</button>
-      <button type="button"
-        class="border-0 py-3 border-3 text-uppercase text-white text-opacity-50 bg-transparent">surface</button>
+      <button type="button" data-modif_img="assets/planet-mercury.svg"
+        class="mercury_btn border-0 border-bottom border-3 mercurycolor py-3 text-uppercase text-white text-opacity-50 bg-transparent">overview</button>
+      <button type="button" data-modif_img="assets/planet-mercury-internal.svg"
+        class="mercury_btn border-0 py-3 border-3 text-uppercase text-white text-opacity-50 bg-transparent">structure</button>
+      <button type="button" data-modif_img="psedo"
+        class="mercury_btn border-0 py-3 border-3 text-uppercase text-white text-opacity-50 bg-transparent">surface</button>
     </div>
-    <img id="img_mercury" class="planetsize my-5" src="assets/planet-mercury.svg" alt="/">
+    <div id="mercury_img" class="planetsize my-5 bbo"></div>
     <section class="container d-flex justify-content-center align-items-center flex-column">
       <h2 class="text-white text-uppercase my-3">mercury</h2>
       <p class="text-white text-center fs-6">
@@ -61,6 +61,7 @@
     </section>
 
   </main>
+  <script src="app.js"></script>
 
 </body>
 
