@@ -14,26 +14,26 @@
   <header
     class="container d-flex justify-content-between align-items-center border-bottom border-white border-opacity-25">
     <h1 class="fs-1 my-3 text-uppercase text-white">the planets</h1>
-    <a href="index.html"><img class="my-3" src="assets/icon-hamburger.svg" alt="/"></a>
+    <img class="my-3" src="assets/icon-hamburger.svg" alt="/">
   </header>
   <main class="d-flex justify-content-center align-items-center flex-column">
     <div
       class="container d-flex justify-content-around align-items-center border-bottom border-white border-opacity-25">
-      <button type="button" data-modif_img="assets/planet-mercury.svg"
-        class="mercury_btn border-0 border-bottom border-3 mercurycolor py-3 text-uppercase text-white text-opacity-50 bg-transparent">overview</button>
-      <button type="button" data-modif_img="assets/planet-mercury-internal.svg"
-        class="mercury_btn border-0 py-3 border-3 text-uppercase text-white text-opacity-50 bg-transparent">structure</button>
-      <button type="button" data-modif_img="psedo"
-        class="mercury_btn border-0 py-3 border-3 text-uppercase text-white text-opacity-50 bg-transparent">surface</button>
+      <button type="button" data-modif_img="0"
+        class="all_btn_planet border-0 border-bottom mercury_color border-3 mercurycolor py-3 text-uppercase text-white text-opacity-50 bg-transparent">overview</button>
+      <button type="button" data-modif_img="1"
+        class="all_btn_planet border-0 py-3 border-3 text-uppercase text-white text-opacity-50 bg-transparent">structure</button>
+      <button type="button" data-modif_img="2"
+        class="all_btn_planet border-0 py-3 border-3 text-uppercase text-white text-opacity-50 bg-transparent">surface</button>
     </div>
-    <div id="mercury_img" class="planetsize my-5 bbo"></div>
+
+    <div class="div_for_planet_img my-5 bbo d-flex justify-content-center">
+      <img id="all_planet_img" src="" alt="/">
+    </div>
+
     <section class="container d-flex justify-content-center align-items-center flex-column">
       <h2 class="text-white text-uppercase my-3">mercury</h2>
-      <p class="text-white text-center fs-6">
-        Mercury is the smallest planet in the Solar System and the closest to the Sun. Its orbit around the Sun takes
-        87.97 Earth days, the shortest of all the Sun's planets. Mercury is one of four terrestrial planets in the Solar
-        System, and is a rocky body like Earth.
-      </p>
+      <p id="planet_desc_text" class="text-white text-center fs-6"></p>
       <p class="text-center text-white text-capitalize">source: <a class="text-white text-opacity-25"
           href="https://en.wikipedia.org/wiki/Mercury_(planet)">wikipedia</a>
       </p>
@@ -41,22 +41,22 @@
       <article
         class="container border border-2 border-white border-opacity-25 d-flex justify-content-between align-items-center my-2">
         <h3 class="text-uppercase fs-6 m-0 p-3 text-white text-opacity-25">rotation time</h3>
-        <p class="text-uppercase fs-6 m-0 p-3 text-white">58.6 day</p>
+        <p class="information_all_planet text-uppercase fs-6 m-0 p-3 text-white"></p>
       </article>
       <article
         class="container border border-2 border-white border-opacity-25 d-flex justify-content-between align-items-center my-2">
         <h3 class="text-uppercase fs-6 m-0 p-3 text-white text-opacity-25">revolution time</h3>
-        <p class="text-uppercase fs-6 m-0 p-3 text-white">87.97 days</p>
+        <p class="information_all_planet text-uppercase fs-6 m-0 p-3 text-white"></p>
       </article>
       <article
         class="container border border-2 border-white border-opacity-25 d-flex justify-content-between align-items-center my-2">
         <h3 class="text-uppercase fs-6 m-0 p-3 text-white text-opacity-25">radius</h3>
-        <p class="text-uppercase fs-6 m-0 p-3 text-white">2,439.7 km</p>
+        <p class="information_all_planet text-uppercase fs-6 m-0 p-3 text-white"></p>
       </article>
       <article
         class="container border border-2 border-white border-opacity-25 d-flex justify-content-between align-items-center my-2">
         <h3 class="text-uppercase fs-6 m-0 p-3 text-white text-opacity-25">average temp</h3>
-        <p class="text-uppercase fs-6 m-0 p-3 text-white ">430°c</p>
+        <p class="information_all_planet text-uppercase fs-6 m-0 p-3 text-white "></p>
       </article>
     </section>
 

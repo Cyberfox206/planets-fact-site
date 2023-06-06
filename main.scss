@@ -21,60 +21,30 @@ $saturncolor: #CD5120;
 $uranuscolor: #1EC1A2;
 $naptunecolo: #2D68F0;
 
-.planetsize {
-    width: 240px;
-    height: 240px;
+.div_for_planet_img {
+    width: 100%;
     position: relative;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: url(assets/planet-mercury.svg);
+}
+
+#all_planet_img {
+    width: 50%;
 }
 
 .psedo::after {
-    left: 23%;
+    left: 0;
     bottom: 0;
     content: "";
-    width: 130px;
-    height: 130px;
+    width: 20%;
+    height: 20%;
     position: absolute;
     background-size: contain;
-    transform: translateY(40%);
     background-position: center;
     background-repeat: no-repeat;
     background-image: url(assets/geology-mercury.png);
 }
 
-.mercurycolor {
+.mercury_color {
     border-bottom-color: $mercurycolor !important;
-}
-
-.venuscolor {
-    border-bottom-color: $venuscolor !important;
-}
-
-.earthcolor {
-    border-bottom-color: $earthcolor !important;
-}
-
-.marscolor {
-    border-bottom-color: $marscolor !important;
-}
-
-.jupitercolor {
-    border-bottom-color: $jupitercolor !important;
-}
-
-.saturncolor {
-    border-bottom-color: $saturncolor !important;
-}
-
-.uranuscolor {
-    border-bottom-color: $uranuscolor !important;
-}
-
-.naptunecolor {
-    border-bottom-color: $naptunecolo !important;
 }
 
 body {
@@ -89,6 +59,10 @@ body {
         img {
             width: 2em;
         }
+    }
+
+    main {
+        width: 100%;
     }
 
     p {
