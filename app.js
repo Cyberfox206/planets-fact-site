@@ -21,18 +21,20 @@ const js_all_planet = {
         mercury_info: ['58.6 day', '87.97 days', '2,439.7 km', '430°c'],
     },
     venus: {
-        ___titre: '',
-        ___color: '',
-        ___planet_img: [],
-        ___desc_text: ``,
-        ___info: [],
+        venus_titre: 'venus',
+        venus_color: 'venus_color',
+        venus_planet_img: ['assets/planet-venus.svg', 'assets/planet-venus-internal.svg', 'psedo_venus'],
+        venus_desc_text: `Venus is the second planet from the Sun. It is named after the Roman goddess of love and beauty. As the
+                        brightest natural object in Earth's night sky after the Moon, Venus can cast shadows and can be, on rare
+                        occasions, visible to the naked eye in broad daylight.`,
+        venus_info: ['243 days', '224.7 days', '6,051.8 km', '471°c'],
     },
     earth: {
-        ___titre: '',
-        ___color: '',
-        ___planet_img: [],
-        ___desc_text: ``,
-        ___info: [],
+        earth_titre: 'earth',
+        earth_color: 'earth_color',
+        earth_planet_img: ['assets/planet-earth.svg', 'assets/planet-earth-internal.svg', 'psedo_earth'],
+        earth_desc_text: `Third planet from the Sun and the only known planet to harbor life. About 29.2% of Earth's surface is land with remaining 70.8% is covered with water. Earth's distance from the Sun, physical properties and geological history have allowed life to evolve and thrive.`,
+        earth_info: ['0.99 days', '365.26 days', '6,371 km', '16°c'],
     },
     mars: {
         mars_titre: 'mars',
@@ -111,6 +113,30 @@ switch (base_url) {
         switch_btn_and_image(all_btn_planet, color_planet, planet_img);
         break;
 
+    case 'venus':
+        titre_planet.textContent = js_all_planet.venus.venus_titre;
+        color_planet = js_all_planet.venus.venus_color;
+        planet_img = js_all_planet.venus.venus_planet_img;
+        all_planet_img.src = js_all_planet.venus.venus_planet_img[0];
+        planet_desc_text.textContent = js_all_planet.venus.venus_desc_text;
+        for (let i = 0; i < information_all_planet.length; i++) {
+            information_all_planet[i].textContent = js_all_planet.venus.venus_info[i];
+        }
+        switch_btn_and_image(all_btn_planet, color_planet, planet_img);
+        break;
+
+    case 'earth':
+        titre_planet.textContent = js_all_planet.earth.earth_titre;
+        color_planet = js_all_planet.earth.earth_color;
+        planet_img = js_all_planet.earth.earth_planet_img;
+        all_planet_img.src = js_all_planet.earth.earth_planet_img[0];
+        planet_desc_text.textContent = js_all_planet.earth.earth_desc_text;
+        for (let i = 0; i < information_all_planet.length; i++) {
+            information_all_planet[i].textContent = js_all_planet.earth.earth_info[i];
+        }
+        switch_btn_and_image(all_btn_planet, color_planet, planet_img);
+        break;
+
     case 'mars':
         titre_planet.textContent = js_all_planet.mars.mars_titre;
         color_planet = js_all_planet.mars.mars_color;
@@ -122,4 +148,17 @@ switch (base_url) {
         }
         switch_btn_and_image(all_btn_planet, color_planet, planet_img);
         break;
+
+    case 'jupiter':
+
+        break
+    case 'saturn':
+
+        break
+    case 'uranus':
+
+        break
+    case 'neptune':
+
+        break
 }

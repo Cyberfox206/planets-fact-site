@@ -48,6 +48,42 @@ $naptunecolo: #2D68F0;
     border-bottom-color: $mercurycolor !important;
 }
 
+.psedo_venus::after {
+    left: 25%;
+    bottom: 0;
+    content: "";
+    width: 50%;
+    height: 50%;
+    transform: translateY(50%);
+    position: absolute;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(assets/geology-venus.png);
+}
+
+.venus_color {
+    border-bottom-color: $venuscolor !important;
+}
+
+.psedo_earth::after {
+    left: 25%;
+    bottom: 0;
+    content: "";
+    width: 50%;
+    height: 50%;
+    transform: translateY(50%);
+    position: absolute;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(assets/geology-earth.png);
+}
+
+.earth_color {
+    border-bottom-color: $earthcolor !important;
+}
+
 .psedo_mars::after {
     left: 25%;
     bottom: 0;
@@ -64,6 +100,78 @@ $naptunecolo: #2D68F0;
 
 .mars_color {
     border-bottom-color: $marscolor !important;
+}
+
+.psedo_jupiter::after {
+    left: 25%;
+    bottom: 0;
+    content: "";
+    width: 50%;
+    height: 50%;
+    transform: translateY(50%);
+    position: absolute;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(assets/geology-jupiter.png);
+}
+
+.jupiter_color {
+    border-bottom-color: $jupitercolor !important;
+}
+
+.psedo_saturn::after {
+    left: 25%;
+    bottom: 0;
+    content: "";
+    width: 50%;
+    height: 50%;
+    transform: translateY(50%);
+    position: absolute;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(assets/geology-saturn.png);
+}
+
+.saturn_color {
+    border-bottom-color: $saturncolor !important;
+}
+
+.psedo_uranus::after {
+    left: 25%;
+    bottom: 0;
+    content: "";
+    width: 50%;
+    height: 50%;
+    transform: translateY(50%);
+    position: absolute;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(assets/geology-uranus.png);
+}
+
+.uranus_color {
+    border-bottom-color: $uranuscolor !important;
+}
+
+.psedo_neptune::after {
+    left: 25%;
+    bottom: 0;
+    content: "";
+    width: 50%;
+    height: 50%;
+    transform: translateY(50%);
+    position: absolute;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(assets/geology-neptune.png);
+}
+
+.neptune_color {
+    border-bottom-color: $naptunecolo !important;
 }
 
 body {
