@@ -184,7 +184,7 @@ body {
 
     header {
         img {
-            width: 2em;
+            width: 2rem;
         }
     }
 
@@ -206,5 +206,11 @@ body {
 
     h3 {
         font-family: $antonio;
+    }
+}
+
+@media (min-width:500px) {
+    #all_planet_img {
+        width: 30%;
     }
 }
