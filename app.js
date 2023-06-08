@@ -85,6 +85,8 @@ const js_all_planet = {
 
 function switch_btn_and_image(table_btn, color, tab_image) {
     let last_select = table_btn[0];
+    table_btn[0].classList.add("border-bottom");
+    table_btn[0].classList.add(color)
     for (let i = 0; i < table_btn.length; i++) {
         table_btn[i].addEventListener("click", () => {
             last_select.classList.remove("border-bottom");
